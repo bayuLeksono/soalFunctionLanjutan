@@ -1,10 +1,10 @@
 // menghitung huruf
 let countLetters = (input) => {
-  let split = input.split('')
-  let result = split.length
+  //   let split = input.split('')
+  let result = input.length
   return console.log(`Total huruf dari ${input} adalah `, result)
 }
-let checkLetters = console.log(countLetters('Dwi Bayu'))
+let checkLetters = countLetters('Dwi Bayu')
 
 // menghitung kata
 let countWords = (input) => {
@@ -12,7 +12,7 @@ let countWords = (input) => {
   let result = split.length
   return console.log(`Total kata dari ${input} adalah `, result)
 }
-let checkWords = console.log(countWords('Dwi Bayu'))
+let checkWords = countWords('Dwi Bayu')
 
 // calculator
 let calculator = (input1, input2, operator) => {
