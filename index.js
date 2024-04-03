@@ -1,6 +1,5 @@
 // menghitung huruf
 let countLetters = (input) => {
-  //   let split = input.split('')
   let result = input.length
   return console.log(`Total huruf dari ${input} adalah `, result)
 }
