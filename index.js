@@ -1,7 +1,7 @@
 // menghitung huruf
 let countLetters = (input) => {
   let result = input.length
-  return console.log(`Total huruf dari ${input} adalah `, result)
+  console.log(`Total huruf dari ${input} adalah ${result}`)
 }
 let checkLetters = countLetters('Dwi Bayu')
 
@@ -9,9 +9,10 @@ let checkLetters = countLetters('Dwi Bayu')
 let countWords = (input) => {
   let split = input.split(' ')
   let result = split.length
-  return console.log(`Total kata dari ${input} adalah `, result)
+  console.log(`Total kata dari ${input} adalah ${result}`)
 }
-let checkWords = countWords('Dwi Bayu')
+let checkWords = console.log(``)
+countWords('Dwi Bayu')
 
 // calculator
 let calculator = (input1, input2, operator) => {
@@ -32,12 +33,9 @@ let checkCalculator = calculator(7, 8, '+')
 
 // cek apakah palindrome
 let isPalindrome = (input) => {
+  let text = input.toLowerCase()
   let rev = input.split('').reverse().join('')
-
-  if (input === rev) {
-    return true
-  }
-  return false
+  return text == rev
 }
 let str1 = 'kodok'
 let str2 = 'kasur rusak'
@@ -48,9 +46,8 @@ let checkIsPalindrome = console.log(isPalindrome(str3))
 let discount = (disc, price) => {
   let discount = disc / 100
   let result = (price - price * discount).toFixed(2)
-  return console.log(
-    `Total harga dari ${price} setelah di discount sebesar ${disc} adalah `,
-    result,
+  console.log(
+    `Total harga dari ${price} setelah di discount sebesar ${disc} adalah ${result}`,
   )
 }
 let checkDiscount = discount(10, 100)
